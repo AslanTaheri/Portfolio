@@ -1,0 +1,27 @@
+.line-numbering-text {
+  display: flex;
+  align-items: flex-start;
+}
+
+.line-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10px;
+  color: gray;
+}
+
+.line-number {
+  margin: 5px 0;
+}
+
+.text-content {
+  flex: 1;
+  overflow: auto;
+  padding-left: 10px;
+  border-left: 1px solid gray;
+}
+
+.text-line {
+  margin: 5px 0;
+}
