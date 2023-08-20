@@ -6,9 +6,12 @@ const Intro = () => {
 I work on code.}`;
 
   return (
-    <div className="bg-slate-100 leading-5">
-      <CodeBase code={text} />
-    </div>
+    <CodeBase>
+      <div className="bg-green-100 text-base/6 ">
+        {/* <CodeBase code={text} /> */}
+        {text}
+      </div>
+    </CodeBase>
   );
 };
 

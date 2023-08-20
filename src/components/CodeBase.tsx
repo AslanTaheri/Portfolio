@@ -12,7 +12,7 @@ function debounce(fn, ms) {
   };
 }
 
-const CodeBase = ({ code }) => {
+const CodeBase = (props) => {
   const codeContainerRef = useRef(null);
   const [lineCount, setLineCount] = useState(0);
 
@@ -41,7 +41,7 @@ const CodeBase = ({ code }) => {
         ))}
       </div>
       <div className={styles["text-content"]} ref={codeContainerRef}>
-        {code}
+        {props.children}
       </div>
     </div>
   );
