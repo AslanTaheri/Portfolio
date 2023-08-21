@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
-const CodeBase = (props) => {
+const NumberedBlock = ({ children }) => {
   const codeContainerRef = useRef(null);
   const [lineCount, setLineCount] = useState(0);
 
@@ -8,7 +8,6 @@ const CodeBase = (props) => {
     const handleResize = () => {
       const lineHeight = 24; // Value based on CSS
       const containerHeight = codeContainerRef.current.clientHeight;
-      console.log(containerHeight);
       const calculatedLineCount = Math.floor(containerHeight / lineHeight);
       setLineCount(calculatedLineCount);
     };
@@ -30,10 +29,10 @@ const CodeBase = (props) => {
         ))}
       </div>
       <div className="pl-2.5 border-slate-500 border-l" ref={codeContainerRef}>
-        {props.children}
+        {children}
       </div>
     </div>
   );
 };
 
-export default CodeBase;
+export default NumberedBlock;

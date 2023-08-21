@@ -1,11 +1,11 @@
 import Button from "./Button";
-import CodeBase from "./CodeBase";
+import NumberedBlock from "./NumberedBlock";
 
 const Intro = () => {
   return (
     <div className="container flex flex-col mx-auto p-6 lg:mb-0">
-      <div className="flex flex-col space-y-5">
-        <CodeBase>
+      <div className="flex flex-col space-y-5 mt-4">
+        <NumberedBlock>
           <div className="bg-slate-100 leading-6">
             <h2 className="font-bold">
               Greetings! My name is Aslan. I am a developer, based in New York
@@ -20,7 +20,7 @@ const Intro = () => {
               Laborum consectetur repellat fugit sit.
             </p>
           </div>
-        </CodeBase>
+        </NumberedBlock>
         <div className="flex items-center ml-8 w-full space-x-4 lg:justify-start">
           <Button label={"My Linedin"} link={""} />
           <Button label={"My GitHub"} link={""} />
