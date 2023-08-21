@@ -13,18 +13,18 @@ const NavBar = () => {
             alt="profile image"
             className="rounded-full w-16 border-2 border-slate-400 md:w-24"
           />
-          <h1>ASLAN TAHERI</h1>
+          <h1 className="font-bold">ASLAN TAHERI</h1>
         </div>
         {/* menu comes here */}
-        <div className="items-center space-x-10 mt-10 md:mt-0">
+        <div className="items-center space-x-5 mt-10 md:mt-0 font-semibold">
           <a href="" className="tracking-widest hover:text-slate-400">
-            About
+            <span className="text-sm text-gray-400">A. </span>About
           </a>
           <a href="" className="tracking-widest hover:text-slate-400">
-            Projects
+            <span className="text-sm text-gray-400">B. </span>Projects
           </a>
           <a href="" className="tracking-widest hover:text-slate-400">
-            Contact
+            <span className="text-sm text-gray-400">C. </span>Contact
           </a>
         </div>
       </div>
