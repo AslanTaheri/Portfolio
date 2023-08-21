@@ -1,17 +1,32 @@
+import Button from "./Button";
 import CodeBase from "./CodeBase";
 
 const Intro = () => {
-  const text = `{ My name is Aslan.
-  I am a developer from the Narnia, currently based in New York City.
-I work on code.}`;
-
   return (
-    <CodeBase>
-      <div className="bg-green-100 text-base/6 ">
-        {/* <CodeBase code={text} /> */}
-        {text}
+    <div className="container flex flex-col mx-auto p-6 lg:mb-0">
+      <div className="flex flex-col space-y-5">
+        <CodeBase>
+          <div className="bg-slate-100 leading-6">
+            <h2 className="font-bold">
+              Greetings! My name is Aslan. I am a developer, based in New York
+              City.
+            </h2>
+            <p className="whitespace-pre-wrap">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              fugiat, maiores culpa asperiores iure vitae magni. Omnis, debitis
+              incidunt eos dolore delectus ea aspernatur tenetur reiciendis
+              pariatur. Quibusdam, veniam quam hic impedit veritatis similique,
+              deserunt illum sit ipsa cumque, soluta amet aut doloribus in rem?
+              Laborum consectetur repellat fugit sit.
+            </p>
+          </div>
+        </CodeBase>
+        <div className="flex items-center ml-8 w-full space-x-4 lg:justify-start">
+          <Button label={"My Linedin"} link={""} />
+          <Button label={"My GitHub"} link={""} />
+        </div>
       </div>
-    </CodeBase>
+    </div>
   );
 };
 

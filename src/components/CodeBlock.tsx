@@ -1,54 +1,49 @@
 import { useState, useEffect, useRef } from "react";
-import styles from "./CodeBlock.module.css";
 
-const CodeBlock = ({ code }) => {
-  //   const lines = code.split("\n");
-  //   console.log(lines);
+function debounce(fn, ms) {
+  let timer;
+  return (_) => {
+    clearTimeout(timer);
+    timer = setTimeout((_) => {
+      timer = null;
+      fn.apply(this, arguments);
+    }, ms);
+  };
+}
+
+const CodeBase = (props) => {
   const codeContainerRef = useRef(null);
   const [lineCount, setLineCount] = useState(0);
 
   useEffect(() => {
-    const calculateLineCount = () => {
-      const lineHeight = 20; // Adjust this value based on your CSS
+    const debouncedHandleResize = debounce(() => {
+      const lineHeight = 24; // Value based on CSS
       const containerHeight = codeContainerRef.current.clientHeight;
       console.log(containerHeight);
       const calculatedLineCount = Math.floor(containerHeight / lineHeight);
       setLineCount(calculatedLineCount);
-    };
-
-    calculateLineCount();
-    const handleResize = () => {
-      calculateLineCount();
-    };
-
-    window.addEventListener("resize", handleResize);
+    }, 250);
+    debouncedHandleResize();
+    window.addEventListener("resize", debouncedHandleResize);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", debouncedHandleResize);
     };
   }, []);
 
   return (
-    <div className={styles["code-container"]} ref={codeContainerRef}>
-      <div className={styles["line-numbers"]}>
+    <div className="flex items-start">
+      <div className="flex flex-col items-end px-2">
         {Array.from({ length: lineCount }, (_, index) => (
-          <div key={index + 1} className={styles["line-number"]}>
+          <div key={index + 1} className="my-1 text-xs text-slate-500">
             {index + 1}
           </div>
         ))}
       </div>
-      {/* <pre className={styles["code"]}>
-        {lines.map((line, index) => (
-          <div key={index} className={styles["code-line"]}>
-            {line}
-          </div>
-        ))}
-      </pre> */}
-      <pre className={styles["code"]}>
-        <div className={styles["code-line"]}>{code}</div>
-        <hr />
-      </pre>
+      <div className="pl-2.5 border-slate-500 border-l" ref={codeContainerRef}>
+        {props.children}
+      </div>
     </div>
   );
 };
 
-export default CodeBlock;
+export default CodeBase;
