@@ -3,7 +3,7 @@ import profileImage from "../assets/images/01.jpg";
 const NavBar = () => {
   return (
     // main navbar container
-    <nav className="container relative mx-auto p-8">
+    <nav className="container mx-auto p-6">
       {/* flex container for the nav items */}
       <div className="flex flex-col items-center justify-between my-6 md:flex-row">
         {/* my logo or name comes here */}
