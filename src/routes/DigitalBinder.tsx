@@ -1,20 +1,40 @@
 import frame01 from "../assets/images/01 - FRAMED.png";
+import Button from "../components/Button";
 import NumberedBlock from "../components/NumberedBlock";
+import Tag from "../components/Tag";
 const DigitalBinder = () => {
   return (
-    <div className="grid md:grid-cols-2 bg-slate-100 leading-6">
-      <NumberedBlock>
-        <h3 className="font-bold">Digital Binder</h3>
-        <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi ex
-          voluptatem reiciendis exercitationem aperiam rem doloremque
-          repudiandae et asperiores. Quo facilis vitae amet ex non labore nemo a
-          porro eos. Harum molestias, doloribus voluptas dolore magnam
-          consequatur, placeat illum, voluptatibus obcaecati dolores omnis eum
-          expedita excepturi explicabo! Consectetur, assumenda.
-        </p>
-      </NumberedBlock>
+    <div className="lg:grid lg:grid-cols-2 lg:gap-4 space-y-2 leading-6 p-2 bg-slate-100">
+      <div>
+        <h3 className="font-bold text-lg ml-7">Digital Binder</h3>
+
+        <NumberedBlock>
+          <p className="">
+            The layout organizer that brings structure to your content. With the
+            power to automatically arrange your HTML elements and text into a
+            clean and reader-friendly layout, Digital Binder is here to simplify
+            your content presentation.
+          </p>
+        </NumberedBlock>
+
+        <Button label={"View project"} className={"ml-7 my-4 items-center"} />
+      </div>
       <img src={frame01} alt="" className="" />
+      <div className="ml-7 items-center flex flex-wrap col-span-2">
+        <Tag tag={"React"} />
+        <Tag tag={"Tailwind"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+        <Tag tag={"React"} />
+      </div>
     </div>
   );
 };

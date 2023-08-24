@@ -3,11 +3,11 @@ import NumberedBlock from "./NumberedBlock";
 
 const Intro = () => {
   return (
-    <div className="container flex flex-col mx-auto p-6 lg:mb-0">
-      <div className="flex flex-col space-y-5 mt-4">
+    <div className="container flex flex-col mx-auto my-10 p-6 lg:mb-0">
+      <div className="flex flex-col space-y-5">
         <NumberedBlock>
-          <div className="bg-slate-100 leading-6">
-            <h2 className="font-bold">
+          <div className="leading-6">
+            <h2 className="font-bold md:text-lg">
               Hello! My name is Aslan. I am a full-stack developer, based in New
               York City.
             </h2>
@@ -21,7 +21,7 @@ const Intro = () => {
             </p>
           </div>
         </NumberedBlock>
-        <div className="flex py-4 ml-8 space-x-4 lg:justify-start">
+        <div className="flex ml-7 space-x-4 lg:justify-start">
           <Button
             label={"My Linedin"}
             link={"https://www.linkedin.com/in/aslantaheri/"}
