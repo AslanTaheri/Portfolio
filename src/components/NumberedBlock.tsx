@@ -20,7 +20,7 @@ const NumberedBlock = ({ children }) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-[10px_1fr] gap-x-2 items-start mx-1">
+    <div className="grid grid-cols-[10px_1fr] gap-x-2 items-start mx-1 my-4">
       <div className="items-end mt-1 space-y-2">
         {Array.from({ length: lineCount }, (_, index) => (
           <div key={index + 1} className=" text-xs text-slate-500">

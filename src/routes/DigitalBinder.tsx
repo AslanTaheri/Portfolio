@@ -5,7 +5,7 @@ import Tag from "../components/Tag";
 const DigitalBinder = () => {
   return (
     <div className="lg:grid lg:grid-cols-2 lg:gap-4 space-y-2 leading-6 p-2 bg-slate-100">
-      <div>
+      <div className="flex flex-col items-start">
         <h3 className="font-bold text-lg ml-7">Digital Binder</h3>
 
         <NumberedBlock>
@@ -17,9 +17,9 @@ const DigitalBinder = () => {
           </p>
         </NumberedBlock>
 
-        <Button label={"View project"} className={"ml-7 my-4 items-center"} />
+        <Button label={"View project"} className={"ml-7 py-2 mt-auto"} />
       </div>
-      <img src={frame01} alt="" className="" />
+      <img src={frame01} alt="" className="py-2" />
       <div className="ml-7 items-center flex flex-wrap col-span-2">
         <Tag tag={"React"} />
         <Tag tag={"Tailwind"} />

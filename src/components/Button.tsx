@@ -6,7 +6,7 @@ const Button = ({ label, link, className }) => {
         rel="noopener noreferrer"
         href={link}
         className={
-          "px-4 py-1.5 text-white bg-black rounded-full shadow-lg trasnition duration-300 active:bg-slate-600 md:text-base hover:bg-slate-300 hover:text-black"
+          "px-4 py-1.5 text-white font-semibold md:text-base bg-black rounded-full shadow-lg transition-colors duration-500 hover:outline hover:outline-2 hover:bg-transparent hover:text-black"
         }>
         {label}
       </a>

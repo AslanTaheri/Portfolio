@@ -14,19 +14,15 @@ const AlphabeticBlock = ({ children, title }) => {
           {title[index]}
         </p>
 
-        <div className="flex-grow relative">
-          <div className="absolute top-8 bottom-2 left-4 border-l border-gray-400"></div>
-          <div className="">{child}</div>
+        <div className="flex-grow relative ml-2">
+          <div className="absolute top-8 bottom-2 left-4 border-l border-gray-400" />
+          <div className="ml-2">{child}</div>
         </div>
       </div>
     );
   });
 
-  return (
-    // <div className="flex items-start">
-    <div className="">{numberedChildren}</div>
-    // </div>
-  );
+  return <div className="">{numberedChildren}</div>;
 };
 
 export default AlphabeticBlock;
