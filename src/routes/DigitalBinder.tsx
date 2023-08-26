@@ -17,7 +17,7 @@ const DigitalBinder = () => {
           </p>
         </NumberedBlock>
 
-        <Button label={"View project"} className={"ml-7 py-2 mt-auto"} />
+        <Button label={"View project"} className={"ml-7 py-2 mt-auto mb-2"} />
       </div>
       <img src={frame01} alt="" className="py-2" />
       <div className="ml-7 items-center flex flex-wrap col-span-2">
