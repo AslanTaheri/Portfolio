@@ -1,5 +1,4 @@
-import Button from "../components/Button";
-import NumberedBlock from "../components/NumberedBlock";
+import AvocaDoor from "./AvocaDoor";
 import Chunk from "./Chunk";
 import DigitalBinder from "./DigitalBinder";
 
@@ -11,11 +10,9 @@ const Projects = () => {
           <DigitalBinder />
         </div>
         <div>
-          <DigitalBinder />
+          <AvocaDoor />
         </div>
-        <div>
-          <DigitalBinder />
-        </div>
+        <div>{/* <DigitalBinder /> */}</div>
       </div>
     </div>
   );
