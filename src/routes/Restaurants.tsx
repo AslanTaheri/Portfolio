@@ -1,9 +1,9 @@
-import imageSrc from "../assets/images/AvocaDoor.png";
+import imageSrc from "../assets/images/RestaurantsApp.png";
 import ProjectTemplate from "../components/ProjectTemplate";
 import Tag from "../components/Tag";
 
-const AvocaDoor = () => {
-  const title = "AvocaDoor";
+const Restaurants = () => {
+  const title = "My Restaurant Adventures";
   const image = <img src={imageSrc} />;
   const tags = (
     <>
@@ -15,10 +15,8 @@ const AvocaDoor = () => {
   );
   const text = (
     <p>
-      The layout organizer that brings structure to your content. With the power
-      to automatically arrange your HTML elements and text into a clean and
-      reader-friendly layout, Digital Binder is here to simplify your content
-      presentation.
+      A minimal yet quick way to share and review your favorite food spots with
+      friends and family.
     </p>
   );
   return (
@@ -26,4 +24,4 @@ const AvocaDoor = () => {
   );
 };
 
-export default AvocaDoor;
+export default Restaurants;

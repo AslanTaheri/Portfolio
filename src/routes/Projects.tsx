@@ -1,5 +1,5 @@
+import Restaurants from "./Restaurants";
 import AvocaDoor from "./AvocaDoor";
-import Chunk from "./Chunk";
 import DigitalBinder from "./DigitalBinder";
 
 const Projects = () => {
@@ -12,7 +12,9 @@ const Projects = () => {
         <div>
           <AvocaDoor />
         </div>
-        <div>{/* <DigitalBinder /> */}</div>
+        <div>
+          <Restaurants />
+        </div>
       </div>
     </div>
   );
