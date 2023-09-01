@@ -22,8 +22,8 @@ function BkgFilter() {
   }, []);
 
   return (
-    <svg ref={svgRef} className="fixed inset-0 -z-1">
-      <rect className="bg-slate-400 w-screen h-screen -z-1" />
+    <svg ref={svgRef} className="fixed inset-0">
+      <rect className="bg-slate-400 w-1/4 h-screen" />
 
       {/* <circle cx="100" cy="100" r="50" fill="blue" /> */}
     </svg>
