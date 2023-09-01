@@ -1,12 +1,15 @@
 .background {
   filter: url("./components/bgFilter.svg#bgFilter");
+}
+
+.noise {
+  filter: url("./components/noise.svg#noise");
+}
+
+.test {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-}
-
-.noise {
-  filter: url("./components/noise.svg#noise");
 }
