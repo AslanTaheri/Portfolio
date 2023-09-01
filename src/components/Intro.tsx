@@ -9,8 +9,8 @@ const Intro = () => {
           <div className="leading-6">
             <h2 className="font-bold mb-4 md:text-4xl">
               <i>
-                Hello, My name is Aslan! I am a full-stack developer, based in
-                New York City.
+                My name is Aslan! I am a full-stack developer, based in New York
+                City.
               </i>
             </h2>
             <p className="whitespace-pre-wrap md:text-3xl">
