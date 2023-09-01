@@ -1,4 +1,5 @@
 import profileImage from "../assets/images/01.jpg";
+import NavButton from "./NavButton";
 
 const NavBar = () => {
   return (
@@ -16,16 +17,10 @@ const NavBar = () => {
           <h1 className="font-bold">ASLAN TAHERI</h1>
         </div>
         {/* menu comes here */}
-        <div className="items-center space-x-5 mt-10 md:mt-0 font-semibold">
-          <a href="" className="tracking-widest hover:text-slate-400">
-            <span className="text-sm text-gray-400">A. </span>About
-          </a>
-          <a href="" className="tracking-widest hover:text-slate-400">
-            <span className="text-sm text-gray-400">B. </span>Projects
-          </a>
-          <a href="" className="tracking-widest hover:text-slate-400">
-            <span className="text-sm text-gray-400">C. </span>Contact
-          </a>
+        <div className="grid grid-cols-3 items-center gap-4 mt-10 md:mt-0">
+          <NavButton bullet={"A."} label={"About"} />
+          <NavButton bullet={"B."} label={"Projects"} />
+          <NavButton bullet={"C."} label={"Contact"} />
         </div>
       </div>
     </nav>

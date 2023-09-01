@@ -2,7 +2,7 @@ import Button from "../components/Button";
 import NumberedBlock from "../components/NumberedBlock";
 const ProjectTemplate = ({ title, text, tags, image }) => {
   return (
-    <div className="lg:grid lg:grid-cols-2 lg:gap-4 space-y-2 leading-6 p-2 bg-slate-100">
+    <div className="lg:grid lg:grid-cols-2 lg:gap-4 space-y-2 leading-6 p-2 border shadow-sm rounded-2xl backdrop-blur-2xl g-slate-100">
       <div className="flex flex-col items-start">
         <h3 className="font-bold text-lg md:text-xl ml-7">{title}</h3>
 

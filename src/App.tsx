@@ -1,11 +1,14 @@
-import NavBar from "./components/NavBar";
-import Home from "./routes/Home";
-import Projects from "./routes/Projects";
-import AlphabeticBlock from "./components/AlphabeticBlock";
+import "./App.css";
 import Layout from "./routes/Layout";
 
 const App = () => {
-  return <Layout />;
+  return (
+    <div className="">
+      <div className="fixed inset-0 background" />
+      <div className="fixed inset-0 opacity-[.5] noise mix-blend-lighten" />
+      <Layout />
+    </div>
+  );
 };
 
 export default App;

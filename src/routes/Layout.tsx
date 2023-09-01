@@ -5,7 +5,7 @@ import AlphabeticBlock from "../components/AlphabeticBlock";
 
 const Layout = () => {
   return (
-    <div className="corntainer py-8 max-w-6xl mx-auto">
+    <div className="corntainer bg-transparent py-8 max-w-6xl mx-auto">
       <NavBar />
       <div>
         <AlphabeticBlock title={["About", "Projects"]}>

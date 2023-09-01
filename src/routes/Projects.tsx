@@ -10,10 +10,10 @@ const Projects = () => {
           <DigitalBinder />
         </div>
         <div>
-          <AvocaDoor />
+          <Restaurants />
         </div>
         <div>
-          <Restaurants />
+          <AvocaDoor />
         </div>
       </div>
     </div>

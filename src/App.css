@@ -1,0 +1,7 @@
+.background {
+  filter: url("./components/bgFilter.svg#bgFilter");
+}
+
+.noise {
+  filter: url("./components/noise.svg#noise");
+}

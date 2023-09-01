@@ -1,0 +1,11 @@
+<svg  xmlns="http://www.w3.org/2000/svg">
+  
+  <filter id="noise">
+<feTurbulence type="fractalNoise" baseFrequency="0.6" stitchTiles="stitch"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="1 1" />
+        <feFuncG type="table" tableValues="1 1" />
+        <feFuncB type="table" tableValues="1 1" />
+      </feComponentTransfer>
+        </filter>
+</svg>;
