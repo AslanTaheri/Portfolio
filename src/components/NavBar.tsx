@@ -12,7 +12,7 @@ const NavBar = () => {
           <img
             src={profileImage}
             alt="profile image"
-            className="rounded-full w-16 border-2 border-slate-400 md:w-24"
+            className="rounded-full w-16 border-2 border-slate-400 md:w-24 z-50"
           />
           <h1 className="font-bold">ASLAN TAHERI</h1>
         </div>

@@ -3,7 +3,7 @@ import NumberedBlock from "./NumberedBlock";
 
 const Intro = () => {
   return (
-    <div className="container flex flex-col mx-auto my-10 p-6 lg:mb-0">
+    <div className="container z-10 flex flex-col mx-auto my-10 p-6 lg:mb-0">
       <div className="flex flex-col space-y-5">
         <NumberedBlock>
           <div className="leading-6">

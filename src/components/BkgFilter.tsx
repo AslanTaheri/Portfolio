@@ -10,12 +10,12 @@ function BkgFilter() {
     filter
       .append("turbulence")
       .attr("type", "turbulence")
-      .attr("baseFrequency", 0.03)
-      .attr("numOctaves", 5)
-      .attr("width", 100)
-      .attr("height", 100)
-      .attr("x", 50)
-      .attr("y", 50);
+      .attr("baseFrequency", 0.003)
+      .attr("numOctaves", 1)
+      .attr("width", 0)
+      .attr("height", 0)
+      .attr("x", 0)
+      .attr("y", 0);
 
     // Apply the filter to the SVG element
     svgRef.current.setAttribute("filter", `url(#${filter.id})`);
@@ -23,7 +23,7 @@ function BkgFilter() {
 
   return (
     <svg ref={svgRef} className="fixed inset-0 -z-1">
-      <rect className="bg-slate-400 w-full h-full" />
+      <rect className="bg-slate-400 w-screen h-screen -z-1" />
 
       {/* <circle cx="100" cy="100" r="50" fill="blue" /> */}
     </svg>
