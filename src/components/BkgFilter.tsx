@@ -12,8 +12,8 @@ function BkgFilter() {
       .attr("type", "turbulence")
       .attr("baseFrequency", 0.003)
       .attr("numOctaves", 1)
-      .attr("width", 0)
-      .attr("height", 0)
+      .attr("width", 100)
+      .attr("height", 100)
       .attr("x", 0)
       .attr("y", 0);
 
