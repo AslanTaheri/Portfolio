@@ -12,8 +12,8 @@ function BkgFilter() {
       .attr("type", "turbulence")
       .attr("baseFrequency", 0.003)
       .attr("numOctaves", 1)
-      .attr("width", 100)
-      .attr("height", 100)
+      // .attr("width", 200)
+      // .attr("height", 100)
       .attr("x", 0)
       .attr("y", 0);
 
@@ -22,8 +22,8 @@ function BkgFilter() {
   }, []);
 
   return (
-    <svg ref={svgRef} className="fixed inset-0">
-      <rect className="bg-slate-400 w-1/4 h-screen" />
+    <svg ref={svgRef} className="fixed inset-0 w-screen h-screen">
+      <rect className="bg-slate-400 w-screen h-screen" />
 
       {/* <circle cx="100" cy="100" r="50" fill="blue" /> */}
     </svg>
