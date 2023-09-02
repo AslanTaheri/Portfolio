@@ -15,9 +15,7 @@ function BkgFilter() {
       // .attr("width", 200)
       // .attr("height", 100)
       .attr("x", 0)
-      .attr("y", 0)
-      .to("blend")
-      .attr("mode", "exclusion");
+      .attr("y", 0);
     const noise = filter
       .append("turbulence")
       .attr("type", "fractalNoise")
@@ -26,9 +24,7 @@ function BkgFilter() {
       // .attr("width", 200)
       // .attr("height", 100)
       .attr("x", 0)
-      .attr("y", 0)
-      .to("blend")
-      .attr("mode", "exclusion");
+      .attr("y", 0);
     const white = filter
       .append("flood")
       .attr("color", "#FFFFFF")
