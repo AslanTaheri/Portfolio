@@ -6,18 +6,18 @@ const NavBar = () => {
     // main navbar container
     <nav className="container mx-auto p-6">
       {/* flex container for the nav items */}
-      <div className="flex flex-col items-center justify-between my-6 md:flex-row">
+      <div className="my-6 flex flex-col items-center justify-between md:flex-row">
         {/* my logo or name comes here */}
         <div className="flex items-center space-x-5">
           <img
             src={profileImage}
             alt="profile image"
-            className="rounded-full w-16 border-2 border-slate-400 md:w-24 z-50"
+            className="z-50 w-16 rounded-full border-2 border-slate-400 md:w-24"
           />
-          <h1 className="font-bold">ASLAN TAHERI</h1>
+          <h1 className="text-xl font-bold">ASLAN TAHERI</h1>
         </div>
         {/* menu comes here */}
-        <div className="grid grid-cols-3 items-center gap-4 mt-10 md:mt-0">
+        <div className="mt-10 grid grid-cols-3 items-center gap-4 md:mt-0">
           <NavButton bullet={"A."} label={"About"} />
           <NavButton bullet={"B."} label={"Projects"} />
           <NavButton bullet={"C."} label={"Contact"} />
