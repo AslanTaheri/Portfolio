@@ -1,5 +1,5 @@
 import Layout from "./routes/Layout";
-import BkgFilter from "./components/BkgFilter";
+import BkgFilter from "./components/filters/BkgFilter";
 
 const App = () => {
   return (

@@ -1,6 +1,6 @@
 const Tag = ({ tag }) => {
   return (
-    <span className="border-black border-solid border text-black text-sm font-medium rounded-full px-2 mx-1 my-1">
+    <span className="mx-1 rounded-full border border-solid border-black bg-transparent px-2 text-sm font-medium text-black backdrop-blur-sm">
       {tag}
     </span>
   );
