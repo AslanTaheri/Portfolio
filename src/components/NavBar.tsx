@@ -6,7 +6,7 @@ const NavBar = () => {
     // main navbar container
     <nav className="container mx-auto bg-transparent p-6">
       {/* flex container for the nav items */}
-      <div className="my-6 flex flex-col items-center justify-between md:flex-row">
+      <section className=" flex flex-col items-center justify-between gap-6 md:flex-row">
         {/* my logo or name comes here */}
         <div className="z-50 flex items-center space-x-5">
           <img
@@ -18,12 +18,12 @@ const NavBar = () => {
           <h1 className=" text-xl font-bold">ASLAN TAHERI</h1>
         </div>
         {/* menu comes here */}
-        <div className="mt-10 grid grid-cols-3 items-center gap-4 md:mt-0">
+        <div className="grid grid-cols-3 items-center gap-4">
           <NavButton bullet={"A."} label={"About"} />
           <NavButton bullet={"B."} label={"Projects"} />
           <NavButton bullet={"C."} label={"Contact"} />
         </div>
-      </div>
+      </section>
     </nav>
   );
 };

@@ -11,7 +11,7 @@ const ProjectTemplate = ({ title, text, tags, image }) => {
         </NumberedBlock>
         <div className="my-auto ml-7 space-y-4">
           <Button label={"View project"} />
-          <div className="flex flex-wrap items-center">{tags}</div>
+          <div className="flex flex-wrap items-center gap-1">{tags}</div>
         </div>
       </div>
       <div className="mx-auto md:max-w-md">{image}</div>

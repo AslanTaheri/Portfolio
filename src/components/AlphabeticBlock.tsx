@@ -20,7 +20,7 @@ const AlphabeticBlock = ({ children, title }) => {
     );
   });
 
-  return <div className="grid grid-cols-1">{numberedChildren}</div>;
+  return <div className="">{numberedChildren}</div>;
 };
 
 export default AlphabeticBlock;

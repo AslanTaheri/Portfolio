@@ -4,7 +4,7 @@ import Tag from "./Tag";
 
 const Intro = () => {
   return (
-    <div className="flex h-[calc(80vh)] flex-col place-content-center gap-12 bg-transparent p-6 lg:mb-0">
+    <div className="flex min-h-[calc(85vh)] flex-col place-content-center gap-12 bg-transparent p-6 lg:mb-0">
       <NumberedBlock>
         <div className="space-y-8 leading-6 tracking-tight">
           <h2 className="font-bold italic md:text-4xl">
@@ -30,16 +30,16 @@ const Intro = () => {
         <Button label={"Resume"} link={"https://github.com/AslanTaheri"} />
       </div>
       <NumberedBlock>
-        <h2 className="font-bold italic md:text-2xl">My digital tool kit /</h2>
-        <div className="my-3 flex flex-wrap items-center gap-y-3 leading-none tracking-tight">
-          <h3 className="pr-2 font-semibold">Programming:</h3>
+        <h2 className="font-bold md:text-2xl">My digital tool kit /</h2>
+        <div className="my-3 flex flex-wrap items-center gap-1 text-sm leading-none tracking-tight md:gap-y-3 md:text-base">
+          <h3 className="font-semibold">Programming:</h3>
           <Tag tag={"Javascript"} />
           <Tag tag={"Typescript"} />
           <Tag tag={"SQL"} />
           <Tag tag={"HTML"} />
           <Tag tag={"CSS"} />
 
-          <h3 className="pr-2 font-semibold">Libraries & Frameworks:</h3>
+          <h3 className="font-semibold">Libraries & Frameworks:</h3>
 
           <Tag tag={"React"} />
           <Tag tag={"Tailwind CSS"} />
@@ -48,7 +48,7 @@ const Intro = () => {
           <Tag tag={"PostgreSQL"} />
           <Tag tag={"MongoDB"} />
 
-          <h3 className="pr-2 font-semibold">Tools & Platforms:</h3>
+          <h3 className="font-semibold">Tools & Platforms:</h3>
 
           <Tag tag={"Git"} />
           <Tag tag={"Github"} />

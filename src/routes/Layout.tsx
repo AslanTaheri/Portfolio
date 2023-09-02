@@ -5,9 +5,9 @@ import Intro from "../components/Intro";
 
 const Layout = () => {
   return (
-    <div className="container mx-auto max-w-6xl py-6">
-      <NavBar />
+    <div className="container mx-auto grid max-w-6xl grid-cols-1 py-6">
       <div className="">
+        <NavBar />
         <AlphabeticBlock title={["About", "Projects"]}>
           <Intro />
 
