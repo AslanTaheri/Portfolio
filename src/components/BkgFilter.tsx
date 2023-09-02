@@ -15,7 +15,9 @@ function BkgFilter() {
       // .attr("width", 200)
       // .attr("height", 100)
       .attr("x", 0)
-      .attr("y", 0);
+      .attr("y", 0)
+      .to("blend")
+      .attr("mode", "exclusion");
     const noise = filter
       .append("turbulence")
       .attr("type", "fractalNoise")
@@ -31,7 +33,7 @@ function BkgFilter() {
       .attr("opacity", 1);
     const whiteGrain = filter.composite(noise, white).attr("operator", "xor");
     // Merge filters together
-    filter.composite(bg, whiteGrain);
+    filter.merge(bg, noise);
     console.log(filter);
     // Apply the filter to the SVG element
     svgRef.current.setAttribute("filter", `url(#${filter.id})`);
@@ -40,8 +42,6 @@ function BkgFilter() {
   return (
     <svg ref={svgRef} className="fixed inset-0 h-screen w-screen">
       <rect className="h-screen w-screen bg-slate-400" />
-
-      {/* <circle cx="100" cy="100" r="50" fill="blue" /> */}
     </svg>
   );
 }
