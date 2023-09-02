@@ -7,7 +7,7 @@ function BkgFilter() {
   useEffect(() => {
     const filter = new SvgFilter();
 
-    filter
+    const bg = filter
       .append("turbulence")
       .attr("type", "turbulence")
       .attr("baseFrequency", 0.003)
@@ -15,15 +15,35 @@ function BkgFilter() {
       // .attr("width", 200)
       // .attr("height", 100)
       .attr("x", 0)
-      .attr("y", 0);
+      .attr("y", 0)
+      .to("blend")
+      .attr("mode", "exclusion");
+    const noise = filter
+      .append("turbulence")
+      .attr("type", "fractalNoise")
+      .attr("baseFrequency", 0.6)
+      .attr("numOctaves", 1)
+      // .attr("width", 200)
+      // .attr("height", 100)
+      .attr("x", 0)
+      .attr("y", 0)
+      .to("blend")
+      .attr("mode", "exclusion");
+    const white = filter
+      .append("flood")
+      .attr("color", "#FFFFFF")
+      .attr("opacity", 1);
+    const whiteGrain = filter.composite(noise, white).attr("operator", "xor");
+    // Merge filters together
+    filter.merge(bg, whiteGrain);
 
     // Apply the filter to the SVG element
     svgRef.current.setAttribute("filter", `url(#${filter.id})`);
   }, []);
 
   return (
-    <svg ref={svgRef} className="fixed inset-0 w-screen h-screen">
-      <rect className="bg-slate-400 w-screen h-screen" />
+    <svg ref={svgRef} className="fixed inset-0 h-screen w-screen">
+      <rect className="h-screen w-screen bg-slate-400" />
 
       {/* <circle cx="100" cy="100" r="50" fill="blue" /> */}
     </svg>
