@@ -7,7 +7,7 @@ const Intro = () => {
     <div className="flex min-h-[calc(85vh)] flex-col place-content-center gap-12 bg-transparent p-6 lg:mb-0">
       <NumberedBlock>
         <div className="space-y-8 leading-6 tracking-tight">
-          <h2 className="font-bold italic md:text-4xl">
+          <h2 className="text-xl font-bold italic md:text-4xl">
             Hello, My name is Aslan! I am a full-stack developer, based in New
             York City.
           </h2>
