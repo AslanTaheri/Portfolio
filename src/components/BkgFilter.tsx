@@ -31,8 +31,8 @@ function BkgFilter() {
       .attr("opacity", 1);
     const whiteGrain = filter.composite(noise, white).attr("operator", "xor");
     // Merge filters together
-    filter.merge(bg, whiteGrain);
-
+    filter.composite(bg, whiteGrain);
+    console.log(filter);
     // Apply the filter to the SVG element
     svgRef.current.setAttribute("filter", `url(#${filter.id})`);
   }, []);
