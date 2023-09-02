@@ -27,7 +27,7 @@ function BkgNoise() {
   }, []);
 
   return (
-    <svg ref={svgRef} className="fixed inset-0 h-screen w-screen">
+    <svg ref={svgRef} className="fixed inset-0 h-screen w-screen opacity-80">
       <rect className="h-screen w-screen bg-slate-400" />
     </svg>
   );
