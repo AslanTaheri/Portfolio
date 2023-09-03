@@ -1,4 +1,4 @@
-const Button = ({ label, link, className }) => {
+const Button = ({ label, link }) => {
   return (
     <a
       target="_blank"

@@ -1,6 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Button from "../components/Button";
 import NumberedBlock from "../components/NumberedBlock";
-const ProjectTemplate = ({ title, text, tags, image }) => {
+
+const ProjectTemplate = ({
+  title,
+  text,
+  tags,
+  image,
+  liveLink,
+  githubLink,
+}) => {
   return (
     <div className="space-y-2 rounded-2xl border p-2 leading-6 shadow-sm backdrop-blur-xl lg:grid lg:grid-cols-2 lg:gap-4">
       <div className="flex flex-col items-start">
@@ -10,7 +20,21 @@ const ProjectTemplate = ({ title, text, tags, image }) => {
           <article className="md:text-lg">{text}</article>
         </NumberedBlock>
         <div className="my-auto ml-7 space-y-4">
-          <Button label={"View project"} />
+          <Button label={"View project"} link={liveLink} />
+          {githubLink && (
+            <a
+              href={githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative ml-4 inline-block"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2xl" />
+              <span className="invisible absolute bottom-full mt-2 whitespace-nowrap rounded-full p-2 text-xs outline outline-1 group-hover:visible">
+                View on Github
+              </span>
+            </a>
+          )}
+
           <div className="flex flex-wrap items-center gap-1">{tags}</div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Projects from "../routes/Projects";
 import AlphabeticBlock from "../components/AlphabeticBlock";
 import Intro from "../components/Intro";
 import Contact from "./Contact";
-import Conta from "./contact2";
+import Footer from "./Footer";
 
 const Layout = () => {
   const scrollAbout = useRef();
@@ -21,20 +21,23 @@ const Layout = () => {
   };
 
   return (
-    <div className="container mx-auto grid max-w-6xl grid-cols-1 py-6">
+    <div className="container mx-auto ">
       <NavBar
         onClickAbout={handleAboutScroll}
         onClickProjects={handleProjectsScroll}
         onClickContact={handleContactScroll}
       />
-      <AlphabeticBlock
-        title={["About", "Projects", "Contact"]}
-        ref={[scrollAbout, scrollProjects, scrollContact]}
-      >
-        <Intro />
-        <Projects />
-        <Conta />
-      </AlphabeticBlock>
+      <div className="grid max-w-6xl grid-cols-1 py-6">
+        <AlphabeticBlock
+          title={["About /", "Projects /", "Contact /"]}
+          ref={[scrollAbout, scrollProjects, scrollContact]}
+        >
+          <Intro />
+          <Projects />
+          <Contact />
+        </AlphabeticBlock>
+        <Footer />
+      </div>
     </div>
   );
 };

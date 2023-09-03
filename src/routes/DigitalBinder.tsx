@@ -7,10 +7,12 @@ const DigitalBinder = () => {
   const image = <img src={imageSrc} />;
   const tags = (
     <>
+      <Tag tag={"Javascript"} />
+      <Tag tag={"Typescript"} />
       <Tag tag={"React"} />
-      <Tag tag={"React"} />
-      <Tag tag={"React"} />
-      <Tag tag={"React"} />
+      <Tag tag={"Tailwind"} />
+      <Tag tag={"Vite"} />
+      <Tag tag={"Netlify"} />
     </>
   );
   const text = (
