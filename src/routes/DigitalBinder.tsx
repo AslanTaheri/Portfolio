@@ -3,7 +3,7 @@ import ProjectTemplate from "../components/ProjectTemplate";
 import Tag from "../components/Tag";
 
 const DigitalBinder = () => {
-  const title = "Digital Binder";
+  const title = "Digital Binder /";
   const image = <img src={imageSrc} />;
   const tags = (
     <>

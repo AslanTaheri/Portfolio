@@ -3,7 +3,7 @@ import ProjectTemplate from "../components/ProjectTemplate";
 import Tag from "../components/Tag";
 
 const Restaurants = () => {
-  const title = "My Restaurant Adventures";
+  const title = "My Restaurant Adventures /";
   const image = <img src={imageSrc} />;
   const tags = (
     <>

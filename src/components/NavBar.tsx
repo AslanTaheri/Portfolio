@@ -1,7 +1,7 @@
 import profileImage from "../assets/images/01.jpg";
 import NavButton from "./NavButton";
 
-const NavBar = () => {
+const NavBar = ({ onClickAbout, onClickProjects, onClickContact }) => {
   return (
     // main navbar container
     <nav className="container mx-auto bg-transparent p-6">
@@ -19,9 +19,13 @@ const NavBar = () => {
         </div>
         {/* menu comes here */}
         <div className="grid grid-cols-3 items-center gap-4">
-          <NavButton bullet={"A."} label={"About"} />
-          <NavButton bullet={"B."} label={"Projects"} />
-          <NavButton bullet={"C."} label={"Contact"} />
+          <NavButton onClick={onClickAbout} bullet={"A."} label={"About"} />
+          <NavButton
+            onClick={onClickProjects}
+            bullet={"B."}
+            label={"Projects"}
+          />
+          <NavButton onClick={onClickContact} bullet={"C."} label={"Contact"} />
         </div>
       </section>
     </nav>

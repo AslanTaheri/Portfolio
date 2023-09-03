@@ -3,7 +3,7 @@ import ProjectTemplate from "../components/ProjectTemplate";
 import Tag from "../components/Tag";
 
 const AvocaDoor = () => {
-  const title = "AvocaDoor";
+  const title = "AvocaDoor /";
   const image = <img src={imageSrc} />;
   const tags = (
     <>

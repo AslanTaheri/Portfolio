@@ -1,12 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const AlphabeticBlock = ({ children, title }) => {
+const AlphabeticBlock = forwardRef(function AlphabeticBlock(props, ref) {
+  const { children, title } = props;
   const numberedChildren = React.Children.map(children, (child, index) => {
     // Convert index to corresponding letter
     const childLetter = String.fromCharCode(65 + index);
 
     return (
-      <div key={index} className="relative flex">
+      <div ref={ref[index]} key={index} className="relative flex">
         <p className="relative left-6 font-semibold text-gray-600">
           {childLetter}.
         </p>
@@ -20,7 +21,7 @@ const AlphabeticBlock = ({ children, title }) => {
     );
   });
 
-  return <div className="">{numberedChildren}</div>;
-};
+  return <div className="grid grid-cols-1">{numberedChildren}</div>;
+});
 
 export default AlphabeticBlock;
