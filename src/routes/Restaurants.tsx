@@ -22,7 +22,7 @@ const Restaurants = () => {
   );
   const text = (
     <p>
-      A full-stack app;ocation that provides a minimal yet quick way to share
+      A full-stack application that provides a minimal yet quick way to share
       and review your favorite food spots with friends and family. I wrote the
       backend of this project with Node.js and PostgreSQL. The Express API and
       PostgreSQL database are deployed on Render.com serving the React frontend

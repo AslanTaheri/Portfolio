@@ -7,7 +7,7 @@ const AlphabeticBlock = forwardRef(function AlphabeticBlock(props, ref) {
     const childLetter = String.fromCharCode(65 + index);
 
     return (
-      <div ref={ref[index]} key={index} className="relative flex">
+      <div ref={ref && ref[index]} key={index} className="relative flex">
         <p className="relative left-6 font-semibold text-gray-600">
           {childLetter}.
         </p>

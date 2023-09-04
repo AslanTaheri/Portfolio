@@ -21,7 +21,7 @@ const Layout = () => {
   };
 
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto">
       <NavBar
         onClickAbout={handleAboutScroll}
         onClickProjects={handleProjectsScroll}

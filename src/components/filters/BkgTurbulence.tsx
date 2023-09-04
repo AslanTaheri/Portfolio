@@ -10,7 +10,7 @@ function BkgTurbulence() {
     filter
       .append("turbulence")
       .attr("type", "turbulence")
-      .attr("baseFrequency", 0.003)
+      .attr("baseFrequency", 0.001)
       .attr("numOctaves", 1)
       // .attr("width", 200)
       // .attr("height", 100)

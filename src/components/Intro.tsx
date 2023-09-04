@@ -6,12 +6,12 @@ const Intro = () => {
   return (
     <div className="flex min-h-[calc(85vh)] flex-col place-content-center gap-12 bg-transparent p-6 lg:mb-0">
       <NumberedBlock>
-        <div className="space-y-8 leading-6 tracking-tight">
+        <div className="space-y-8">
           <h2 className="text-xl font-bold italic md:text-4xl">
             👋 Hello, my name is Aslan! I am a software engineer, based in New
             York City.
           </h2>
-          <p className="md:text-3xl">
+          <p className="tracking-tight md:text-3xl md:leading-relaxed">
             The magic of turning code into vibrant life is my calling / With a
             background in design and engineering, my focus is creating efficient
             products that boast meaningful aesthetics / When I'm not diving into
