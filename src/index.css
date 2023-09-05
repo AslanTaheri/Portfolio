@@ -3,6 +3,6 @@
 @tailwind utilities;
 @layer utilities {
   .clipnav {
-    clip-path: inset(0dvh 0dvh 90dvh);
+    clip-path: inset(0dvh 0dvh 88dvh);
   }
 }

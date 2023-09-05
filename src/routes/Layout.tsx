@@ -28,7 +28,7 @@ const Layout = () => {
         <BkgFilter />
       </div>
       <NavBarTitle />
-      <div className="sticky top-8 z-50 self-center ">
+      <div className="sticky top-10 z-50 self-center ">
         <NavBarButtons
           onClickAbout={handleAboutScroll}
           onClickProjects={handleProjectsScroll}

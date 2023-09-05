@@ -10,7 +10,7 @@ const AlphabeticBlock = forwardRef(function AlphabeticBlock(props, ref) {
       <div
         ref={ref && ref[index]}
         key={index}
-        className="relative flex scroll-mt-24"
+        className="relative flex scroll-mt-28"
       >
         <p className="relative left-6 font-semibold text-gray-600">
           {childLetter}.
