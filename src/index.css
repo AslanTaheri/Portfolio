@@ -1,8 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer utilities {
+
+.clipnav {
+  clip-path: inset(0dvh 0dvh 88dvh);
+}
+
+@media (max-width: 640px) {
   .clipnav {
-    clip-path: inset(0dvh 0dvh 88dvh);
+    clip-path: inset(0dvh 0dvh 85dvh);
   }
 }
