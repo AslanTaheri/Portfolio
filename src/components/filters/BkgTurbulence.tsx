@@ -23,7 +23,7 @@ function BkgTurbulence() {
 
   return (
     <svg ref={svgRef} className="fixed inset-0 h-screen w-screen">
-      <rect className="h-screen w-screen bg-slate-400" />
+      <rect className="h-screen w-screen" />
     </svg>
   );
 }

@@ -7,7 +7,11 @@ const AlphabeticBlock = forwardRef(function AlphabeticBlock(props, ref) {
     const childLetter = String.fromCharCode(65 + index);
 
     return (
-      <div ref={ref && ref[index]} key={index} className="relative flex">
+      <div
+        ref={ref && ref[index]}
+        key={index}
+        className="relative flex scroll-mt-24"
+      >
         <p className="relative left-6 font-semibold text-gray-600">
           {childLetter}.
         </p>
@@ -21,7 +25,7 @@ const AlphabeticBlock = forwardRef(function AlphabeticBlock(props, ref) {
     );
   });
 
-  return <div className="grid grid-cols-1">{numberedChildren}</div>;
+  return <div className=" grid grid-cols-1">{numberedChildren}</div>;
 });
 
 export default AlphabeticBlock;

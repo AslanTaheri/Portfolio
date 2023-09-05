@@ -31,7 +31,7 @@ const Intro = () => {
       </div>
       <NumberedBlock>
         <h2 className="font-bold md:text-2xl">My digital tool kit /</h2>
-        <div className="my-3 flex flex-wrap items-center gap-1 text-sm leading-none tracking-tight md:gap-y-3 md:text-base">
+        <div className="my-3 flex flex-wrap items-center gap-1 text-sm leading-relaxed tracking-tight md:gap-y-3 md:text-base">
           <h3 className="font-semibold">Programming:</h3>
           <Tag tag={"Javascript"} />
           <Tag tag={"Typescript"} />
@@ -58,7 +58,7 @@ const Intro = () => {
           <Tag tag={"Vercel"} />
           <Tag tag={"Firebase"} />
           <Tag tag={"RESTful APIs"} />
-          <Tag tag={"ّFigma"} />
+          <Tag tag={"Figma"} />
         </div>
       </NumberedBlock>
     </div>

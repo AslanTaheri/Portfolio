@@ -4,7 +4,7 @@ import NavButton from "./NavButton";
 const NavBar = ({ onClickAbout, onClickProjects, onClickContact }) => {
   return (
     <nav className="bg-transparent p-6">
-      <section className="flex flex-col items-center justify-between gap-6 md:flex-row">
+      <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
         <div className="z-50 flex items-center space-x-5">
           <img
             src={profileImage}
@@ -15,16 +15,22 @@ const NavBar = ({ onClickAbout, onClickProjects, onClickContact }) => {
           <h1 className="text-xl font-bold">ASLAN TAHERI</h1>
         </div>
 
-        <section className="grid grid-cols-3 items-center gap-4">
-          <NavButton onClick={onClickAbout} bullet={"A."} label={"About"} />
-          <NavButton
-            onClick={onClickProjects}
-            bullet={"B."}
-            label={"Projects"}
-          />
-          <NavButton onClick={onClickContact} bullet={"C."} label={"Contact"} />
-        </section>
-      </section>
+        <div className="sticky top-0 self-start">
+          <div className="grid grid-cols-3 gap-4">
+            <NavButton onClick={onClickAbout} bullet={"A."} label={"About"} />
+            <NavButton
+              onClick={onClickProjects}
+              bullet={"B."}
+              label={"Projects"}
+            />
+            <NavButton
+              onClick={onClickContact}
+              bullet={"C."}
+              label={"Contact"}
+            />
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
