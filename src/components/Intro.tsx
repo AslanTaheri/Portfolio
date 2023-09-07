@@ -1,6 +1,7 @@
 import Button from "./Button";
 import NumberedBlock from "./NumberedBlock";
 import Tag from "./Tag";
+import resume from "../assets/Resume.pdf";
 
 const Intro = () => {
   return (
@@ -27,7 +28,9 @@ const Intro = () => {
           link={"https://www.linkedin.com/in/aslantaheri/"}
         />
         <Button label={"GitHub"} link={"https://github.com/AslanTaheri"} />
-        <Button label={"Resume"} link={"https://github.com/AslanTaheri"} />
+        {/* <a href="" download={resume}> */}
+        <Button label={"Resume"} link={resume} />
+        {/* </a> */}
       </div>
       <NumberedBlock>
         <h2 className="font-bold md:text-2xl">My digital tool kit /</h2>
