@@ -4,9 +4,6 @@
 
  # Tech Stack
 - Typescript
-- Node.js
-- Express
-- PostgreSQL
 - React
 - TailwindCSS
 - Vite
