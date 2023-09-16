@@ -3,6 +3,8 @@ import ProjectTemplate from "../components/ProjectTemplate";
 import Tag from "../components/Tag";
 
 const DigitalBinder = () => {
+  const liveLink = "https://taheri.dev";
+  const githubLink = "https://github.com/AslanTaheri/portfolio";
   const title = "Digital Binder /";
   const image = <img src={imageSrc} />;
   const tags = (
@@ -24,7 +26,14 @@ const DigitalBinder = () => {
     </p>
   );
   return (
-    <ProjectTemplate title={title} text={text} tags={tags} image={image} />
+    <ProjectTemplate
+      title={title}
+      text={text}
+      tags={tags}
+      image={image}
+      liveLink={liveLink}
+      githubLink={githubLink}
+    />
   );
 };
 
