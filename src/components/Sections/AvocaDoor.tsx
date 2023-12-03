@@ -17,11 +17,8 @@ const AvocaDoor = () => {
   );
   const text = (
     <p>
-      AvocaDoor is a headless ecommerce solution that serves as a grocery
-      shopping storefront. It was my first experience doing a full-scale React
-      project, it offered a fantastic opportunity to immerse myself in the world
-      of web development. This project allowed me to master essential React
-      concepts, bringing me closer to becoming a proficient front-end developer.
+      AvocaDoor is a headless ecommerce solution that serves as a shopping
+      storefront for taking orders and cart management, developed with React.
     </p>
   );
   return (
