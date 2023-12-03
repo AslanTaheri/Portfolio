@@ -1,4 +1,4 @@
-import Layout from "./routes/Layout";
+import Layout from "./components/Sections/Layout";
 import BkgFilter from "./components/filters/BkgFilter";
 
 const App = () => {

@@ -20,15 +20,16 @@ const ProjectTemplate = ({
           <article className="md:text-lg">{text}</article>
         </NumberedBlock>
         <div className="my-auto ml-7 space-y-4">
-          <Button label={"View project"} link={liveLink} />
+          {liveLink && <Button label={"View project"} link={liveLink} />}
           {githubLink && (
             <a
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative ml-4 inline-block"
+              className="group relative mr-4 inline-block font-medium"
             >
-              <FontAwesomeIcon icon={faGithub} size="2xl" />
+              View on GitHub
+              <FontAwesomeIcon icon={faGithub} size="xl" className="mx-2" />
               <span className="invisible absolute bottom-full mt-2 whitespace-nowrap rounded-full p-2 text-xs outline outline-1 group-hover:visible">
                 View on Github
               </span>
