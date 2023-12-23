@@ -13,14 +13,12 @@ const Intro = () => {
             New York City.
           </h2>
           <p className="tracking-tight md:text-xl md:leading-relaxed">
-            The magic of turning code into vibrant life is my calling. I work
-            with Typescript in Node.js and React, plus backend technologies such
-            as Express and PostgreSQL. I also work with Tailwind CSS and
-            Material UI to create efficient products that boast meaningful
-            aesthetics. When I'm not diving into my VS Code universe, I'm likely
-            improvising something tasty in the kitchen, practicing Jiu Jitsu or
-            on a scenic trail for a zen ride. Let's collaborate to engineer your
-            next solution!
+            As a software engineer with an artistic background in computational
+            design in architecture from Yale University and a B.Sc. in computer
+            science and structural engineering, I am passionate about solving
+            problems at the intersection of design and engineering. Blending
+            excellence in design with engineered efficiency is what I strive
+            for.
           </p>
         </div>
       </NumberedBlock>
@@ -38,32 +36,40 @@ const Intro = () => {
         <h2 className="font-bold md:text-2xl">My digital tool kit /</h2>
         <div className="my-3 flex flex-wrap items-center gap-1 text-sm leading-relaxed tracking-tight md:gap-y-3 md:text-base">
           <h3 className="font-semibold">Programming:</h3>
+          <Tag tag={"Python"} />
           <Tag tag={"Javascript"} />
           <Tag tag={"Typescript"} />
           <Tag tag={"SQL"} />
+          <Tag tag={"LISP"} />
           <Tag tag={"HTML"} />
           <Tag tag={"CSS"} />
 
           <h3 className="font-semibold">Libraries & Frameworks:</h3>
 
-          <Tag tag={"React"} />
-          <Tag tag={"Tailwind CSS"} />
           <Tag tag={"Node.js"} />
           <Tag tag={"Express.js"} />
           <Tag tag={"PostgreSQL"} />
           <Tag tag={"MongoDB"} />
+          <Tag tag={"React"} />
+          <Tag tag={"Material UI"} />
+          <Tag tag={"Tailwind CSS"} />
 
           <h3 className="font-semibold">Tools & Platforms:</h3>
 
+          <Tag tag={"AWS"} />
+          <Tag tag={"Microsoft Azure"} />
           <Tag tag={"Git"} />
-          <Tag tag={"Github"} />
-          <Tag tag={"Vite"} />
-          <Tag tag={"Netlify"} />
-          <Tag tag={"Render"} />
-          <Tag tag={"Vercel"} />
-          <Tag tag={"Firebase"} />
-          <Tag tag={"RESTful APIs"} />
-          <Tag tag={"Figma"} />
+          <Tag tag={"Jest"} />
+          <Tag tag={"Cypress"} />
+          <Tag tag={"REST APIs"} />
+          <Tag tag={"GraphQL"} />
+
+          <h3 className="font-semibold">Skills:</h3>
+
+          <Tag tag={"Object Oriented Programming"} />
+          <Tag tag={"Agile Development"} />
+          <Tag tag={"Test Driven Development"} />
+          <Tag tag={"CI/CD"} />
         </div>
       </NumberedBlock>
     </div>

@@ -8,7 +8,7 @@ import NavBarTitle from "../NavBarTitle";
 import NavBarButtons from "../NavBarButtons";
 import BkgFilter from "../filters/BkgFilter";
 
-const Layout = () => {
+const Home = () => {
   const scrollAbout = useRef();
   const scrollProjects = useRef();
   const scrollContact = useRef();
@@ -37,6 +37,7 @@ const Layout = () => {
       </div>
 
       <div className="grid max-w-6xl scroll-mt-8 grid-cols-1 py-6">
+        <BkgFilter />
         <AlphabeticBlock
           title={["About /", "Projects /", "Contact /"]}
           ref={[scrollAbout, scrollProjects, scrollContact]}
@@ -51,4 +52,4 @@ const Layout = () => {
   );
 };
 
-export default Layout;
+export default Home;
