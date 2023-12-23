@@ -1,10 +1,9 @@
 import { useEffect, useRef } from "react";
 import CodeBlock from "../../CodeBlock";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CADcircles = () => {
   const navigate = useNavigate();
-  const location = useLocation();
 
   const canvasRef = useRef(null);
   const stageRef = useRef(null);
@@ -203,7 +202,9 @@ const CADcircles = () => {
   };
 
   return (
-    <div className="mt-12 flex flex-col items-center gap-8">
+    <div className="container mt-12 flex flex-col items-center gap-8 p-8">
+      <div className=""></div>
+      <div></div>
       <div className="flex gap-12">
         <button className="p-2 underline decoration-4 underline-offset-8 hover:bg-gray-200">
           <Link to="/">Back to Home</Link>
@@ -221,7 +222,11 @@ const CADcircles = () => {
           Save my Drawing
         </button>
       </div>
+
       <CodeBlock>
+        <p>- Click, hold, release to draw a circle.</p>
+        <p>- Change a circle's radius by click inside and dragging.</p>
+
         <canvas
           className="m-auto bg-red-800"
           ref={canvasRef}
