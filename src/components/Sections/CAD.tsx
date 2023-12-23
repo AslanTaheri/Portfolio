@@ -3,7 +3,7 @@ import ProjectTemplate from "../ProjectTemplate";
 import Tag from "../Tag";
 
 const CAD = () => {
-  const liveLink = "https://taheri.dev/cadcircles";
+  const liveLink = "/cadcircles";
   const githubLink = "https://github.com/AslanTaheri/CADcircles";
   const title = "CAD Circles/";
   const image = <img src={imageSrc} />;
