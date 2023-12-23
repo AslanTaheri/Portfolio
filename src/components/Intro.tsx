@@ -9,8 +9,8 @@ const Intro = () => {
       <NumberedBlock>
         <div className="space-y-8">
           <h2 className="text-xl font-bold italic md:text-2xl">
-            👋 Hello, my name is Aslan! I am a full stack developer, based in
-            New York City.
+            👋 Hello, my name is Aslan! I am a software engineer, based in New
+            York City.
           </h2>
           <p className="tracking-tight md:text-xl md:leading-relaxed">
             As a software engineer with an artistic background in computational
