@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Button from "../components/Button";
 import NumberedBlock from "../components/NumberedBlock";
+import { Link } from "react-router-dom";
 
 const ProjectTemplate = ({
   title,
@@ -20,7 +21,16 @@ const ProjectTemplate = ({
           <article className="md:text-lg">{text}</article>
         </NumberedBlock>
         <div className="my-auto ml-7 space-y-4">
-          {liveLink && <Button label={"Play Live"} link={liveLink} />}
+          {liveLink && (
+            <Link
+              className={
+                "rounded-full bg-black px-4 py-1.5 text-sm font-semibold text-white shadow-lg transition-colors duration-500 hover:bg-transparent hover:text-black hover:outline hover:outline-2 hover:backdrop-blur-sm md:text-base"
+              }
+              to={liveLink}
+            >
+              Play Live
+            </Link>
+          )}
           {githubLink && (
             <a
               href={githubLink}
