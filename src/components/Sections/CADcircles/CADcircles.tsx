@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react";
-// import createjs from "createjs/";
-import "./CADcircles.css";
 import CodeBlock from "../../CodeBlock";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const CADcircles = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const canvasRef = useRef(null);
   const stageRef = useRef(null);
 
@@ -181,7 +182,7 @@ const CADcircles = () => {
   }, []);
 
   const handleReset = () => {
-    window.location.reload();
+    navigate(0);
   };
 
   const handleSaveImage = () => {
